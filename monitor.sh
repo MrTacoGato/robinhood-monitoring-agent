@@ -24,7 +24,7 @@ Target account: $RH_ACCOUNT
 
 $(cat $TASK)" \
   --model sonnet \
-  --allowedTools "mcp__robinhood__get_accounts" "mcp__robinhood__get_portfolio" "mcp__robinhood__get_equity_positions" "mcp__robinhood__get_option_positions" "mcp__robinhood__get_equity_quotes" "mcp__robinhood__get_index_quotes" "mcp__robinhood__get_indexes" "mcp__robinhood__get_earnings_calendar" "mcp__robinhood__get_equity_fundamentals" "mcp__robinhood__get_earnings_results" "WebSearch" \
+  --allowedTools "mcp__robinhood__get_accounts" "mcp__robinhood__get_portfolio" "mcp__robinhood__get_equity_positions" "mcp__robinhood__get_option_positions" "mcp__robinhood__get_equity_quotes" "mcp__robinhood__get_index_quotes" "mcp__robinhood__get_indexes" "mcp__robinhood__get_earnings_calendar" "mcp__robinhood__get_equity_fundamentals" "mcp__robinhood__get_earnings_results" "mcp__robinhood__get_realized_pnl" "WebSearch" \
   2>>~/rh-agent/error.log)
 
 echo "$(date): [$LABEL] $OUT" >> ~/rh-agent/monitor.log
