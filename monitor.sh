@@ -20,7 +20,7 @@ done
 
 OUT=$(claude -p "$(cat system_prompt.md)
 
-Target account: YOUR_ACCOUNT_NUMBER
+Target account: $RH_ACCOUNT
 
 $(cat $TASK)" \
   --model sonnet \
